@@ -36,6 +36,7 @@ class Song
     genre_histogram = {}
 
     genre_histogram[*@@genres.group_by{|genre| genre}.map{|g, c| [g, c.size]}]
+    binding.pry
     genre_histogram
   end
 
