@@ -34,9 +34,8 @@ class Song
   #"iterate over @@genres"
     #see if hash already has a key then add
     genre_histogram = {}
-
-    genre_histogram[*@@genres.group_by{|genre| genre}.map{|g, c| [g, c.size]}]
     binding.pry
+    genre_histogram[*@@genres.group_by{|genre| genre}.map{|g, c| [g, c.size]}]
     genre_histogram
   end
 
