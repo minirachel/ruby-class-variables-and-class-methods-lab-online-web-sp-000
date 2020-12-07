@@ -34,7 +34,9 @@ class Song
   #"iterate over @@genres"
     #see if hash already has a key then add
     genre_histogram = {}
-    @@genres.map do {|}
+    @@genres.map do |genre|
+
+    end
   end
 
 
