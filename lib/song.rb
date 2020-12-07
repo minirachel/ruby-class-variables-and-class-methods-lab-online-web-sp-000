@@ -35,6 +35,7 @@ class Song
     #see if hash already has a key then add
     genre_histogram = {}
     @@genres.map do |genre|
+      binding.pry
       genre_histogram[genre]
     end
   end
