@@ -29,14 +29,13 @@ class Song
     @@genres.uniq
   end
 
-  def self.genre_count(genre)
+  def self.genre_count
     #    "genre" ==> int of songs
   #"iterate over @@genres"
     #see if hash already has a key then add
     genre_histogram = {}
 
-    genre_histogram[genre] << @@genres.count(genre)
-        binding.pry
+    @@genres.group_by{|genre| genre}.map{|g, c| [g, c.size]}
   end
 
 
