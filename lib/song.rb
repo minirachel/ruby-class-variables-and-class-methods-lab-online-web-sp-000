@@ -35,7 +35,6 @@ class Song
     #see if hash already has a key then add
     genre_histogram = {}
     genre_histogram[genre] << @@genres.count(genre)
-    end
   end
 
 
