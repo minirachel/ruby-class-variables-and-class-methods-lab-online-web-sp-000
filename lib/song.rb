@@ -28,4 +28,14 @@ class Song
   def self.genres
     @@genres.uniq
   end
+
+  def self.genre_count
+    #    "genre" ==> int of songs
+  #"iterate over @@genres"
+    #see if hash already has a key then add
+    genre_histogram = {}
+    @@genres.map do {|}
+  end
+
+  
 end
