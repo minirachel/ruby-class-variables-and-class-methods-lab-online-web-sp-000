@@ -29,7 +29,7 @@ class Song
     @@genres.uniq
   end
 
-  def self.genre_count
+  def self.genre_count(genre)
     #    "genre" ==> int of songs
   #"iterate over @@genres"
     #see if hash already has a key then add
