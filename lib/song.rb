@@ -34,6 +34,7 @@ class Song
   #"iterate over @@genres"
     #see if hash already has a key then add
     genre_histogram = {}
+    binding.pry
     genre_histogram[genre] << @@genres.count(genre)
   end
 
