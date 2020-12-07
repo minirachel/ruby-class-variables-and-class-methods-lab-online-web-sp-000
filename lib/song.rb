@@ -34,8 +34,7 @@ class Song
   #"iterate over @@genres"
     #see if hash already has a key then add
     genre_histogram = {}
-    @@genres.map do |genre|
-      genre_histogram[genre] << genre_histogram[genre].count + 1
+    genre_histogram[genre] << @@genres.count(genre)
     end
   end
 
