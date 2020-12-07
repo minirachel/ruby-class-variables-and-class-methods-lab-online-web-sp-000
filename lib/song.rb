@@ -37,5 +37,5 @@ class Song
     @@genres.map do {|}
   end
 
-  
+
 end
